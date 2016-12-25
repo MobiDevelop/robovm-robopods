@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.mobidevelop.robovm</groupId>
-    <version>2.2.1-SNAPSHOT</version>
+    <version>2.3.0</version>
     <artifactId>robopods-parent</artifactId>
     <name>RoboPods Parent</name>
     <packaging>pom</packaging>
