@@ -72,7 +72,7 @@ Apply the following changes to your `robovm.xml` file:
 ### Gradle
 
 Make the following changes to your `build.gradle` file.
-Note that I had to use the 2.2.1-SNAPSHOT for robopods. The 2.2.0 version did not work for me.
+Note that I had to use the 2.3.0 for robopods. The 2.2.0 version did not work for me.
 
 ```
 allprojects {
@@ -84,7 +84,7 @@ allprojects {
         appName = "sample_ios_google_signin"
         gdxVersion = '1.9.4'
         roboVMVersion = '2.2.0'
-        robopodsVersion = '2.2.1-SNAPSHOT'				// Add
+        robopodsVersion = '2.3.0'				// Add
         box2DLightsVersion = '1.4'
         ashleyVersion = '1.7.0'
         aiVersion = '1.8.0'
