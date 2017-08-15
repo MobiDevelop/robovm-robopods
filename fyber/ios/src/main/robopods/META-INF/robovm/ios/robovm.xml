@@ -1,0 +1,20 @@
+<config>
+    <libs>
+        <lib>z</lib>
+    </libs>    
+    <frameworks>
+        
+        <framework>AdSupport</framework>
+        <framework>CoreGraphics</framework>
+        <framework>CoreLocation</framework>
+        <framework>CoreTelephony</framework>
+        <framework>MediaPlayer</framework>
+        <framework>QuartzCore</framework>
+        <framework>StoreKit</framework>
+        <framework>SystemConfiguration</framework>
+        <framework>UIKit</framework>
+        <framework>CFNetwork</framework>
+           
+    </frameworks>
+ 
+</config>
