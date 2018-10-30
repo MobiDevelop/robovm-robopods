@@ -47,7 +47,7 @@ import org.robovm.apple.foundation.*;
     /*</properties>*/
     /*<methods>*/
     @Method(selector = "messaging:didReceiveRegistrationToken:")
-    void messaging$didReceiveRegistrationToken$(FIRMessaging messaging, String fcmToken);
+    void didReceiveRegistrationToken(FIRMessaging messaging, String fcmToken);
     /**
      * @since Available in iOS 10.0 and later.
      */

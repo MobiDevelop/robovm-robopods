@@ -49,7 +49,7 @@ import org.robovm.apple.foundation.*;
     /*<members>*//*</members>*/
     /*<methods>*/
     @NotImplemented("messaging:didReceiveRegistrationToken:")
-    public void messaging$didReceiveRegistrationToken$(FIRMessaging messaging, String fcmToken) {}
+    public void didReceiveRegistrationToken(FIRMessaging messaging, String fcmToken) {}
     /**
      * @since Available in iOS 10.0 and later.
      */
