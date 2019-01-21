@@ -52,7 +52,7 @@ import org.robovm.apple.uikit.*;
     @NotImplemented("interstitialDidLoad")
     public void interstitialDidLoad() {}
     @NotImplemented("interstitialDidFailToLoadWithError:")
-    public void interstitialDidFailToLoadWithError(NSError error) {}
+    public void interstitialDidFailToLoad(NSError error) {}
     @NotImplemented("interstitialDidOpen")
     public void interstitialDidOpen() {}
     @NotImplemented("interstitialDidClose")
@@ -60,7 +60,7 @@ import org.robovm.apple.uikit.*;
     @NotImplemented("interstitialDidShow")
     public void interstitialDidShow() {}
     @NotImplemented("interstitialDidFailToShowWithError:")
-    public void interstitialDidFailToShowWithError(NSError error) {}
+    public void interstitialDidFailToShow(NSError error) {}
     @NotImplemented("didClickInterstitial")
     public void didClickInterstitial() {}
     /*</methods>*/

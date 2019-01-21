@@ -54,7 +54,7 @@ import org.robovm.apple.uikit.*;
     @NotImplemented("didReceiveRewardForPlacement:")
     public void didReceiveRewardForPlacement(ISPlacementInfo placementInfo) {}
     @NotImplemented("rewardedVideoDidFailToShowWithError:")
-    public void rewardedVideoDidFailToShowWithError(NSError error) {}
+    public void rewardedVideoDidFailToShow(NSError error) {}
     @NotImplemented("rewardedVideoDidOpen")
     public void rewardedVideoDidOpen() {}
     @NotImplemented("rewardedVideoDidClose")

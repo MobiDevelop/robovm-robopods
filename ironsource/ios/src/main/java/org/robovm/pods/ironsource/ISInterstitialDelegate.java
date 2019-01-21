@@ -50,7 +50,7 @@ import org.robovm.apple.uikit.*;
     @Method(selector = "interstitialDidLoad")
     void interstitialDidLoad();
     @Method(selector = "interstitialDidFailToLoadWithError:")
-    void interstitialDidFailToLoadWithError(NSError error);
+    void interstitialDidFailToLoad(NSError error);
     @Method(selector = "interstitialDidOpen")
     void interstitialDidOpen();
     @Method(selector = "interstitialDidClose")
@@ -58,7 +58,7 @@ import org.robovm.apple.uikit.*;
     @Method(selector = "interstitialDidShow")
     void interstitialDidShow();
     @Method(selector = "interstitialDidFailToShowWithError:")
-    void interstitialDidFailToShowWithError(NSError error);
+    void interstitialDidFailToShow(NSError error);
     @Method(selector = "didClickInterstitial")
     void didClickInterstitial();
     /*</methods>*/

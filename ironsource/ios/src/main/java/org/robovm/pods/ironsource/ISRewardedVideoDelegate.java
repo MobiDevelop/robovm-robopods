@@ -52,7 +52,7 @@ import org.robovm.apple.uikit.*;
     @Method(selector = "didReceiveRewardForPlacement:")
     void didReceiveRewardForPlacement(ISPlacementInfo placementInfo);
     @Method(selector = "rewardedVideoDidFailToShowWithError:")
-    void rewardedVideoDidFailToShowWithError(NSError error);
+    void rewardedVideoDidFailToShow(NSError error);
     @Method(selector = "rewardedVideoDidOpen")
     void rewardedVideoDidOpen();
     @Method(selector = "rewardedVideoDidClose")

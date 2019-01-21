@@ -34,32 +34,40 @@ import org.robovm.apple.uikit.*;
 /*<javadoc>*/
 
 /*</javadoc>*/
-/*<annotations>*/@Marshaler(ValuedEnum.AsMachineSizedUIntMarshaler.class)/*</annotations>*/
-public enum /*<name>*/ISBannerSize/*</name>*/ implements ValuedEnum {
-    /*<values>*/
-    BANNER(0L),
-    LARGE_BANNER(1L),
-    RECTANGLE_BANNER(2L),
-    TABLET_BANNER(3L),
-    SMART(4L);
-    /*</values>*/
+/*<annotations>*/@Library(Library.INTERNAL) @NativeClass/*</annotations>*/
+/*<visibility>*/public/*</visibility>*/ class /*<name>*/ISBannerSize/*</name>*/ 
+    extends /*<extends>*/NSObject/*</extends>*/ 
+    /*<implements>*//*</implements>*/ {
 
-    /*<bind>*/
-    /*</bind>*/
+    /*<ptr>*/public static class ISBannerSizePtr extends Ptr<ISBannerSize, ISBannerSizePtr> {}/*</ptr>*/
+    /*<bind>*/static { ObjCRuntime.bind(ISBannerSize.class); }/*</bind>*/
     /*<constants>*//*</constants>*/
-    /*<methods>*//*</methods>*/
-
-    private final long n;
-
-    private /*<name>*/ISBannerSize/*</name>*/(long n) { this.n = n; }
-    public long value() { return n; }
-    public static /*<name>*/ISBannerSize/*</name>*/ valueOf(long n) {
-        for (/*<name>*/ISBannerSize/*</name>*/ v : values()) {
-            if (v.n == n) {
-                return v;
-            }
-        }
-        throw new IllegalArgumentException("No constant with value " + n + " found in " 
-            + /*<name>*/ISBannerSize/*</name>*/.class.getName());
-    }
+    public static ISBannerSize BANNER = new ISBannerSize("BANNER");
+    public static ISBannerSize LARGE = new ISBannerSize("LARGE");
+    public static ISBannerSize RECTANGLE = new ISBannerSize("RECTANGLE");
+    public static ISBannerSize SMART = new ISBannerSize("SMART");
+    /*<constructors>*/
+    public ISBannerSize() {}
+    protected ISBannerSize(Handle h, long handle) { super(h, handle); }
+    protected ISBannerSize(SkipInit skipInit) { super(skipInit); }
+    @Method(selector = "initWithWidth:andHeight:")
+    public ISBannerSize(@MachineSizedSInt long width, @MachineSizedSInt long height) { super((SkipInit) null); initObject(init(width, height)); }
+    @Method(selector = "initWithDescription:")
+    public ISBannerSize(String description) { super((SkipInit) null); initObject(init(description)); }
+    /*</constructors>*/
+    /*<properties>*/
+    @Property(selector = "sizeDescription")
+    public native String getSizeDescription();
+    @Property(selector = "width")
+    public native @MachineSizedSInt long getWidth();
+    @Property(selector = "height")
+    public native @MachineSizedSInt long getHeight();
+    /*</properties>*/
+    /*<members>*//*</members>*/
+    /*<methods>*/
+    @Method(selector = "initWithWidth:andHeight:")
+    protected native @Pointer long init(@MachineSizedSInt long width, @MachineSizedSInt long height);
+    @Method(selector = "initWithDescription:")
+    protected native @Pointer long init(String description);
+    /*</methods>*/
 }
