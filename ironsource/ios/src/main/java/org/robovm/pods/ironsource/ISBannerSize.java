@@ -29,6 +29,7 @@ import org.robovm.rt.bro.annotation.*;
 import org.robovm.rt.bro.ptr.*;
 import org.robovm.apple.foundation.*;
 import org.robovm.apple.uikit.*;
+import org.robovm.apple.coregraphics.*;
 /*</imports>*/
 
 /*<javadoc>*/
@@ -42,10 +43,6 @@ import org.robovm.apple.uikit.*;
     /*<ptr>*/public static class ISBannerSizePtr extends Ptr<ISBannerSize, ISBannerSizePtr> {}/*</ptr>*/
     /*<bind>*/static { ObjCRuntime.bind(ISBannerSize.class); }/*</bind>*/
     /*<constants>*//*</constants>*/
-    public static ISBannerSize BANNER = new ISBannerSize("BANNER");
-    public static ISBannerSize LARGE = new ISBannerSize("LARGE");
-    public static ISBannerSize RECTANGLE = new ISBannerSize("RECTANGLE");
-    public static ISBannerSize SMART = new ISBannerSize("SMART");
     /*<constructors>*/
     public ISBannerSize() {}
     protected ISBannerSize(Handle h, long handle) { super(h, handle); }
