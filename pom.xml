@@ -194,5 +194,6 @@
         <module>parse</module>
         <module>reachability</module>
         <module>mapbox</module>
+        <module>google-ad-consent</module>
     </modules>
 </project>
