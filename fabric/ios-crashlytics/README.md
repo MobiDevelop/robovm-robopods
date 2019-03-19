@@ -33,12 +33,14 @@ Crashlytics.getSharedInstance().setDebugMode(true);
 ```
 
 ### Uploading dSYMs
-Fabric includes a tool to automatically upload your project’s dSYM, but this only works for XCode projects.
+Fabric includes a tool to automatically upload your project's dSYM files on each build, but this only works for XCode projects.
 
-dSYM files can be uploaded manually using the `upload-symbols` script included with the Fabric OS X app. Typical usage is as follows:
+dSYM files can be uploaded manually through the Fabric console, once the first unsymbolicated crash reports have been received. To do this, follow the instructions from [the official Fabric documentation](https://docs.fabric.io/apple/crashlytics/missing-dsyms.html#uploading-missing-dsyms).
+
+This process can also be automated. For this, you can use the `upload-symbols` script included with the Fabric OS X app. Typical usage is as follows:
 
 ```sh
 /Applications/Fabric.app/Contents/MacOS/upload-symbols -a <api-key> -p ios robovm/build/robovm/<your-app-name>.dSYM
 ```
 
-More info [in the official Fabric documentation](https://docs.fabric.io/apple/crashlytics/missing-dsyms.html#upload-symbols-script).
+More info on `upload-symbols` script is available [in the Fabric docs](https://docs.fabric.io/apple/crashlytics/missing-dsyms.html#upload-symbols-script).
