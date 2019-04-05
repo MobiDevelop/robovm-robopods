@@ -50,9 +50,9 @@ import org.robovm.apple.storekit.*;
     /*</properties>*/
     /*<methods>*/
     @Method(selector = "rewardBasedVideoAd:didRewardUserWithReward:")
-    void rewardBasedVideoAdDidRewardUserWithReward(GADRewardBasedVideoAd rewardBasedVideoAd, GADAdReward reward);
+    void didRewardUser(GADRewardBasedVideoAd rewardBasedVideoAd, GADAdReward reward);
     @Method(selector = "rewardBasedVideoAd:didFailToLoadWithError:")
-    void rewardBasedVideoAdDidFailToLoadWithError(GADRewardBasedVideoAd rewardBasedVideoAd, NSError error);
+    void didFailToLoad(GADRewardBasedVideoAd rewardBasedVideoAd, NSError error);
     @Method(selector = "rewardBasedVideoAdDidReceiveAd:")
     void rewardBasedVideoAdDidReceiveAd(GADRewardBasedVideoAd rewardBasedVideoAd);
     @Method(selector = "rewardBasedVideoAdDidOpen:")

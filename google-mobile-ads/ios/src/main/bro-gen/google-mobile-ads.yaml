@@ -22,7 +22,7 @@ classes:
     DFPBannerView:
         methods:
             '-setValidAdSizesWithSizes:':
-                name: setValidAdSizes
+                exclude: true # deprecated
     DFPBannerViewOptions: {}
     DFPCustomRenderedAd: {}
     DFPInterstitial:
@@ -373,15 +373,15 @@ protocols:
     GADRewardBasedVideoAdDelegate:
         methods:
             '-rewardBasedVideoAd:didRewardUserWithReward:':
-                name: rewardBasedVideoAdDidRewardUserWithReward
+                name: didRewardUser
             '-rewardBasedVideoAd:didFailToLoadWithError:':
-                name: rewardBasedVideoAdDidFailToLoadWithError
+                name: didFailToLoad
     GADRewardedAdDelegate:
         methods:
             '-rewardedAd:userDidEarnReward:':
-                name: rewardedAdUserDidEarnReward
+                name: didEarnReward
             '-rewardedAd:didFailToPresentWithError:':
-                name: rewardedAdDidFailToPresent
+                name: didFailToPresent
     GADRewardedAdMetadataDelegate: {}
     GADUnifiedNativeAdDelegate: {}
     GADUnifiedNativeAdLoaderDelegate:
@@ -392,7 +392,10 @@ protocols:
         methods:
             '-nativeAd:didReceiveUnconfirmedClickOnAssetID:':
                 name: didReceiveUnconfirmedClickOnAssetID
-    GADVideoControllerDelegate: {}
+    GADVideoControllerDelegate:
+        methods:
+            '-videoControllerDidEndVideoPlayback:':
+                name: didEndVideoPlayback
 
      
 functions:

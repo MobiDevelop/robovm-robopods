@@ -52,9 +52,9 @@ import org.robovm.apple.storekit.*;
     /*<members>*//*</members>*/
     /*<methods>*/
     @NotImplemented("rewardedAd:userDidEarnReward:")
-    public void rewardedAdUserDidEarnReward(GADRewardedAd rewardedAd, GADAdReward reward) {}
+    public void didEarnReward(GADRewardedAd rewardedAd, GADAdReward reward) {}
     @NotImplemented("rewardedAd:didFailToPresentWithError:")
-    public void rewardedAdDidFailToPresent(GADRewardedAd rewardedAd, NSError error) {}
+    public void didFailToPresent(GADRewardedAd rewardedAd, NSError error) {}
     @NotImplemented("rewardedAdDidPresent:")
     public void rewardedAdDidPresent(GADRewardedAd rewardedAd) {}
     @NotImplemented("rewardedAdDidDismiss:")

@@ -50,9 +50,9 @@ import org.robovm.apple.storekit.*;
     /*</properties>*/
     /*<methods>*/
     @Method(selector = "rewardedAd:userDidEarnReward:")
-    void rewardedAdUserDidEarnReward(GADRewardedAd rewardedAd, GADAdReward reward);
+    void didEarnReward(GADRewardedAd rewardedAd, GADAdReward reward);
     @Method(selector = "rewardedAd:didFailToPresentWithError:")
-    void rewardedAdDidFailToPresent(GADRewardedAd rewardedAd, NSError error);
+    void didFailToPresent(GADRewardedAd rewardedAd, NSError error);
     @Method(selector = "rewardedAdDidPresent:")
     void rewardedAdDidPresent(GADRewardedAd rewardedAd);
     @Method(selector = "rewardedAdDidDismiss:")

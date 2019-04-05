@@ -52,30 +52,7 @@ Add the following dependency to your `pom.xml`:
 
 ### SDK setup
 
-Google Mobile Ads does not require SDK initialization to allow you to display ads.  
-However it is highly recommended to use a _Google Service configuration file_ if you plan on using more 
-Google services than just Mobile Ads. You will then have all your keys in one place.
-
-#### Use a Google Service configuration file
-
-Go to [Google Developers](https://developers.google.com/mobile/add?platform=ios) and follow the instruction to create your 
-configuration file.
-
-Copy the generated file to a resource folder of your app that will get bundled with your app 
-(the folder should be specified as a resource in your `robovm.xml`).
-
-Add the following code to your application's entry point, typically `didFinishLaunching()`
-in your app delegate.
-
-```Java
-try {
-    GGLContext.getSharedInstance().configure();
-} catch (NSErrorException e) {
-    System.err.println("Error configuring the Google context: " + e.getError());
-}
-```
-
-Now all your Google services are setup.
+Google Mobile Ads does not require SDK initialization to allow you to display ads.
 
 #### Disable crash reporting
 

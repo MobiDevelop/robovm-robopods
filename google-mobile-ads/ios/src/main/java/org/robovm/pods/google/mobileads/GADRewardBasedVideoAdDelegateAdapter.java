@@ -52,9 +52,9 @@ import org.robovm.apple.storekit.*;
     /*<members>*//*</members>*/
     /*<methods>*/
     @NotImplemented("rewardBasedVideoAd:didRewardUserWithReward:")
-    public void rewardBasedVideoAdDidRewardUserWithReward(GADRewardBasedVideoAd rewardBasedVideoAd, GADAdReward reward) {}
+    public void didRewardUser(GADRewardBasedVideoAd rewardBasedVideoAd, GADAdReward reward) {}
     @NotImplemented("rewardBasedVideoAd:didFailToLoadWithError:")
-    public void rewardBasedVideoAdDidFailToLoadWithError(GADRewardBasedVideoAd rewardBasedVideoAd, NSError error) {}
+    public void didFailToLoad(GADRewardBasedVideoAd rewardBasedVideoAd, NSError error) {}
     @NotImplemented("rewardBasedVideoAdDidReceiveAd:")
     public void rewardBasedVideoAdDidReceiveAd(GADRewardBasedVideoAd rewardBasedVideoAd) {}
     @NotImplemented("rewardBasedVideoAdDidOpen:")
