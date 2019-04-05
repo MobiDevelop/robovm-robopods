@@ -45,19 +45,19 @@ import org.robovm.apple.storekit.*;
     /*<bind>*/static { ObjCRuntime.bind(GADRequest.class); }/*</bind>*/
     /*<constants>*//*</constants>*/
     /*<constructors>*/
+    public GADRequest() {}
     protected GADRequest(Handle h, long handle) { super(h, handle); }
     protected GADRequest(SkipInit skipInit) { super(skipInit); }
-    public GADRequest() { super((Handle) null, create()); retain(getHandle()); }
     /*</constructors>*/
     /*<properties>*/
     @Property(selector = "testDevices")
-    public native @org.robovm.rt.bro.annotation.Marshaler(NSArray.AsStringListMarshaler.class) List<String> getTestDevices();
+    public native NSArray<?> getTestDevices();
     @Property(selector = "setTestDevices:")
-    public native void setTestDevices(@org.robovm.rt.bro.annotation.Marshaler(NSArray.AsStringListMarshaler.class) List<String> v);
+    public native void setTestDevices(NSArray<?> v);
     @Property(selector = "keywords")
-    public native @org.robovm.rt.bro.annotation.Marshaler(NSArray.AsStringListMarshaler.class) List<String> getKeywords();
+    public native NSArray<?> getKeywords();
     @Property(selector = "setKeywords:")
-    public native void setKeywords(@org.robovm.rt.bro.annotation.Marshaler(NSArray.AsStringListMarshaler.class) List<String> v);
+    public native void setKeywords(NSArray<?> v);
     @Property(selector = "contentURL")
     public native String getContentURL();
     @Property(selector = "setContentURL:")
@@ -78,21 +78,25 @@ import org.robovm.apple.storekit.*;
     /*<members>*//*</members>*/
     /*<methods>*/
     @GlobalValue(symbol="kGADSimulatorID", optional=true)
-    public static native String getSimulatorID();
+    public static native NSObject getSimulatorID();
     
     @Method(selector = "registerAdNetworkExtras:")
     public native void registerAdNetworkExtras(GADAdNetworkExtras extras);
     @Method(selector = "adNetworkExtrasFor:")
-    public native GADAdNetworkExtras getAdNetworkExtras(Class<? extends GADAdNetworkExtras> aClass);
+    public native GADAdNetworkExtras adNetworkExtrasFor(Class<?> aClass);
     @Method(selector = "removeAdNetworkExtrasFor:")
-    public native void removeAdNetworkExtras(Class<? extends GADAdNetworkExtras> aClass);
+    public native void removeAdNetworkExtrasFor(Class<?> aClass);
     @Method(selector = "setLocationWithLatitude:longitude:accuracy:")
     public native void setLocation(@MachineSizedFloat double latitude, @MachineSizedFloat double longitude, @MachineSizedFloat double accuracyInMeters);
+    @Method(selector = "setBirthdayWithMonth:day:year:")
+    public native void setBirthday(@MachineSizedSInt long month, @MachineSizedSInt long day, @MachineSizedSInt long year);
+    @Method(selector = "setLocationWithDescription:")
+    public native void setLocation(String locationDescription);
     @Method(selector = "tagForChildDirectedTreatment:")
     public native void tagForChildDirectedTreatment(boolean childDirectedTreatment);
     @Method(selector = "request")
-    protected static native @Pointer long create();
+    public static native GADRequest request();
     @Method(selector = "sdkVersion")
-    public static native String getSdkVersion();
+    public static native String sdkVersion();
     /*</methods>*/
 }
