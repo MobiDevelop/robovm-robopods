@@ -45,19 +45,18 @@ import org.robovm.apple.storekit.*;
     /*<bind>*/static { ObjCRuntime.bind(GADRequest.class); }/*</bind>*/
     /*<constants>*//*</constants>*/
     /*<constructors>*/
-    public GADRequest() {}
     protected GADRequest(Handle h, long handle) { super(h, handle); }
     protected GADRequest(SkipInit skipInit) { super(skipInit); }
     /*</constructors>*/
     /*<properties>*/
     @Property(selector = "testDevices")
-    public native NSArray<?> getTestDevices();
+    public native @org.robovm.rt.bro.annotation.Marshaler(NSArray.AsStringListMarshaler.class) List<String> getTestDevices();
     @Property(selector = "setTestDevices:")
-    public native void setTestDevices(NSArray<?> v);
+    public native void setTestDevices(@org.robovm.rt.bro.annotation.Marshaler(NSArray.AsStringListMarshaler.class) List<String> v);
     @Property(selector = "keywords")
-    public native NSArray<?> getKeywords();
+    public native @org.robovm.rt.bro.annotation.Marshaler(NSArray.AsStringListMarshaler.class) List<String> getKeywords();
     @Property(selector = "setKeywords:")
-    public native void setKeywords(NSArray<?> v);
+    public native void setKeywords(@org.robovm.rt.bro.annotation.Marshaler(NSArray.AsStringListMarshaler.class) List<String> v);
     @Property(selector = "contentURL")
     public native String getContentURL();
     @Property(selector = "setContentURL:")
@@ -78,7 +77,7 @@ import org.robovm.apple.storekit.*;
     /*<members>*//*</members>*/
     /*<methods>*/
     @GlobalValue(symbol="kGADSimulatorID", optional=true)
-    public static native NSObject getSimulatorID();
+    public static native String getSimulatorID();
     
     @Method(selector = "registerAdNetworkExtras:")
     public native void registerAdNetworkExtras(GADAdNetworkExtras extras);

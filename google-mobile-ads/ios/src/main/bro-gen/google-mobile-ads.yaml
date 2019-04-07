@@ -141,6 +141,11 @@ classes:
     GADNativeMuteThisAdLoaderOptions: {}
     GADRTBRequestParameters: {}
     GADRequest:
+        skip_def_constructor: true
+        properties:
+            '(testDevices|keywords)':
+                type: List<String>
+                marshaler: NSArray.AsStringListMarshaler
         methods:
             '-setLocationWithLatitude:longitude:accuracy:':
                 name: setLocation
@@ -211,8 +216,18 @@ protocols:
     GADAudioVideoManagerDelegate: {}
     GADBannerViewDelegate:
         methods:
+            '-adViewDidReceiveAd:':
+                name: didReceiveAd
             '-adView:didFailToReceiveAdWithError:':
                 name: didFailToReceiveAd
+            '-adViewWillPresentScreen:':
+                name: willPresentScreen
+            '-adViewWillDismissScreen:':
+                name: willDismissScreen
+            '-adViewDidDismissScreen:':
+                name: didDismissScreen
+            '-adViewWillLeaveApplication:':
+                name: willLeaveApplication
     GADCustomEventBanner:
         methods:
             '-requestBannerAd:parameter:label:request:':
@@ -465,9 +480,11 @@ values:
     kGADSimulatorID:
         class: GADRequest
         name: getSimulatorID
+        type: String
     kDFPSimulatorID:
         class: DFPRequest
         name: getSimulatorID
+        type: String
 
     GADNativeContent(.*)Asset:
         enum: GADNativeContentAdAssetID

@@ -50,17 +50,17 @@ import org.robovm.apple.storekit.*;
     /*</properties>*/
     /*<methods>*/
     @Method(selector = "adViewDidReceiveAd:")
-    void adViewDidReceiveAd(GADBannerView bannerView);
+    void didReceiveAd(GADBannerView bannerView);
     @Method(selector = "adView:didFailToReceiveAdWithError:")
     void didFailToReceiveAd(GADBannerView bannerView, GADRequestError error);
     @Method(selector = "adViewWillPresentScreen:")
-    void adViewWillPresentScreen(GADBannerView bannerView);
+    void willPresentScreen(GADBannerView bannerView);
     @Method(selector = "adViewWillDismissScreen:")
-    void adViewWillDismissScreen(GADBannerView bannerView);
+    void willDismissScreen(GADBannerView bannerView);
     @Method(selector = "adViewDidDismissScreen:")
-    void adViewDidDismissScreen(GADBannerView bannerView);
+    void didDismissScreen(GADBannerView bannerView);
     @Method(selector = "adViewWillLeaveApplication:")
-    void adViewWillLeaveApplication(GADBannerView bannerView);
+    void willLeaveApplication(GADBannerView bannerView);
     /*</methods>*/
     /*<adapter>*/
     /*</adapter>*/

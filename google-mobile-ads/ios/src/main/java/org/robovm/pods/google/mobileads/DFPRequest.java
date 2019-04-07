@@ -66,7 +66,7 @@ import org.robovm.apple.storekit.*;
     /*<members>*//*</members>*/
     /*<methods>*/
     @GlobalValue(symbol="kDFPSimulatorID", optional=true)
-    public static native NSObject getSimulatorID();
+    public static native String getSimulatorID();
     
     @Method(selector = "updateCorrelator")
     public static native void updateCorrelator();

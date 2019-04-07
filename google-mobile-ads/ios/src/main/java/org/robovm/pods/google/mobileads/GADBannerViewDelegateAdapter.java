@@ -52,16 +52,16 @@ import org.robovm.apple.storekit.*;
     /*<members>*//*</members>*/
     /*<methods>*/
     @NotImplemented("adViewDidReceiveAd:")
-    public void adViewDidReceiveAd(GADBannerView bannerView) {}
+    public void didReceiveAd(GADBannerView bannerView) {}
     @NotImplemented("adView:didFailToReceiveAdWithError:")
     public void didFailToReceiveAd(GADBannerView bannerView, GADRequestError error) {}
     @NotImplemented("adViewWillPresentScreen:")
-    public void adViewWillPresentScreen(GADBannerView bannerView) {}
+    public void willPresentScreen(GADBannerView bannerView) {}
     @NotImplemented("adViewWillDismissScreen:")
-    public void adViewWillDismissScreen(GADBannerView bannerView) {}
+    public void willDismissScreen(GADBannerView bannerView) {}
     @NotImplemented("adViewDidDismissScreen:")
-    public void adViewDidDismissScreen(GADBannerView bannerView) {}
+    public void didDismissScreen(GADBannerView bannerView) {}
     @NotImplemented("adViewWillLeaveApplication:")
-    public void adViewWillLeaveApplication(GADBannerView bannerView) {}
+    public void willLeaveApplication(GADBannerView bannerView) {}
     /*</methods>*/
 }
