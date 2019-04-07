@@ -141,7 +141,6 @@ classes:
     GADNativeMuteThisAdLoaderOptions: {}
     GADRTBRequestParameters: {}
     GADRequest:
-        skip_def_constructor: true
         properties:
             '(testDevices|keywords)':
                 type: List<String>
