@@ -7,11 +7,11 @@
 ## Install Instructions
 
 ### 3rd party native framework
-This RoboPod requires you to download and add the native 3rd party framework manually:
+This RoboPod requires you to download and add the native 3rd party frameworks manually:
 
-1. Download the SDK from https://developers.google.com/admob/ios/download
-2. Put the `GoogleMobileAds.framework` folder in your iOS project's `libs/` folder
-3. Add the following to your `robovm.xml`
+1. Download the SDK Zip file from https://developers.google.com/admob/ios/download
+2. Unzil all the contents (several .framework files) in your iOS project's `libs/` folder
+3. Add the missing frameworks to your `robovm.xml`
 
 ```
 <config>
@@ -20,7 +20,11 @@ This RoboPod requires you to download and add the native 3rd party framework man
         <path>libs</path>
     </frameworkPaths>
     <frameworks>
+        ...
+        <framework>GoogleAppMeasurement</framework>
         <framework>GoogleMobileAds</framework>
+        <framework>GoogleUtilities</framework>
+        <framework>nanopb</framework>
     </frameworks>
 </config>
 ```
@@ -52,7 +56,7 @@ Add the following dependency to your `pom.xml`:
 
 ### SDK setup
 
-Google Mobile Ads does not require SDK initialization to allow you to display ads.
+[TODO] (https://developers.google.com/admob/ios/quick-start#initialize_mobile_ads)
 
 #### Disable crash reporting
 
