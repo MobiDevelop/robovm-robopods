@@ -56,7 +56,8 @@ Add the following dependency to your `pom.xml`:
 
 ### SDK setup
 
-[TODO] (https://developers.google.com/admob/ios/quick-start#initialize_mobile_ads)
+- [Update your Info.plist] (https://developers.google.com/admob/ios/quick-start#update_your_infoplist)
+- [Initialize the SDK] (https://developers.google.com/admob/ios/quick-start#initialize_mobile_ads).
 
 #### Disable crash reporting
 
@@ -230,5 +231,4 @@ you should always see an ad.
 
 ##### Next steps
 
-- Take a look at our sample app: [Link](https://github.com/robovm/robovm-samples/tree/master/robopods/google-mobile-ads/ios)
 - Read the official Google Mobile Ads iOS documentation: [Link](https://developers.google.com/admob/ios)
