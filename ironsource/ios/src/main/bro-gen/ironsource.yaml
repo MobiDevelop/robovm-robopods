@@ -1,5 +1,5 @@
 package: org.robovm.pods.ironsource
-include: [foundation, uikit, coregraphics]
+include: [foundation, uikit, coregraphics, coreanimation]
 framework: IronSource
 clang_args: ['-x', 'objective-c']
 headers:
