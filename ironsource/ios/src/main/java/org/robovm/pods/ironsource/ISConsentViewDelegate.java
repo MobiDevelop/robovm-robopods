@@ -36,7 +36,7 @@ import org.robovm.apple.coregraphics.*;
 
 /*</javadoc>*/
 /*<annotations>*//*</annotations>*/
-/*<visibility>*/public/*</visibility>*/ interface /*<name>*/ISBannerDelegate/*</name>*/ 
+/*<visibility>*/public/*</visibility>*/ interface /*<name>*/ISConsentViewDelegate/*</name>*/ 
     /*<implements>*/extends NSObjectProtocol/*</implements>*/ {
 
     /*<ptr>*/
@@ -48,20 +48,18 @@ import org.robovm.apple.coregraphics.*;
     
     /*</properties>*/
     /*<methods>*/
-    @Method(selector = "bannerDidLoad:")
-    void bannerDidLoad(ISBannerView bannerView);
-    @Method(selector = "bannerDidFailToLoadWithError:")
-    void bannerDidFailToLoad(NSError error);
-    @Method(selector = "didClickBanner")
-    void didClickBanner();
-    @Method(selector = "bannerWillPresentScreen")
-    void bannerWillPresentScreen();
-    @Method(selector = "bannerDidDismissScreen")
-    void bannerDidDismissScreen();
-    @Method(selector = "bannerWillLeaveApplication")
-    void bannerWillLeaveApplication();
-    @Method(selector = "bannerDidShow")
-    void bannerDidShow();
+    @Method(selector = "consentViewDidLoadSuccess:")
+    void consentViewDidLoadSuccess(String consentViewType);
+    @Method(selector = "consentViewDidFailToLoadWithError:consentViewType:")
+    void consentViewDidFailToLoad(NSError error, String consentViewType);
+    @Method(selector = "consentViewDidShowSuccess:")
+    void consentViewDidShowSuccess(String consentViewType);
+    @Method(selector = "consentViewDidFailToShowWithError:consentViewType:")
+    void consentViewDidFailToShow(NSError error, String consentViewType);
+    @Method(selector = "consentViewDidAccept:")
+    void consentViewDidAccept(String consentViewType);
+    @Method(selector = "consentViewDidDismiss:")
+    void consentViewDidDismiss(String consentViewType);
     /*</methods>*/
     /*<adapter>*/
     /*</adapter>*/

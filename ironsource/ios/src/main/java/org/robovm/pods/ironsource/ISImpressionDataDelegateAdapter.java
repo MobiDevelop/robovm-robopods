@@ -33,36 +33,24 @@ import org.robovm.apple.coregraphics.*;
 /*</imports>*/
 
 /*<javadoc>*/
-
 /*</javadoc>*/
 /*<annotations>*//*</annotations>*/
-/*<visibility>*/public/*</visibility>*/ interface /*<name>*/ISBannerDelegate/*</name>*/ 
-    /*<implements>*/extends NSObjectProtocol/*</implements>*/ {
+/*<visibility>*/public/*</visibility>*/ class /*<name>*/ISImpressionDataDelegateAdapter/*</name>*/ 
+    extends /*<extends>*/NSObject/*</extends>*/ 
+    /*<implements>*/implements ISImpressionDataDelegate/*</implements>*/ {
 
     /*<ptr>*/
     /*</ptr>*/
     /*<bind>*/
     /*</bind>*/
     /*<constants>*//*</constants>*/
+    /*<constructors>*//*</constructors>*/
     /*<properties>*/
     
     /*</properties>*/
+    /*<members>*//*</members>*/
     /*<methods>*/
-    @Method(selector = "bannerDidLoad:")
-    void bannerDidLoad(ISBannerView bannerView);
-    @Method(selector = "bannerDidFailToLoadWithError:")
-    void bannerDidFailToLoad(NSError error);
-    @Method(selector = "didClickBanner")
-    void didClickBanner();
-    @Method(selector = "bannerWillPresentScreen")
-    void bannerWillPresentScreen();
-    @Method(selector = "bannerDidDismissScreen")
-    void bannerDidDismissScreen();
-    @Method(selector = "bannerWillLeaveApplication")
-    void bannerWillLeaveApplication();
-    @Method(selector = "bannerDidShow")
-    void bannerDidShow();
+    @NotImplemented("impressionDataDidSucceed:")
+    public void impressionDataDidSucceed(ISImpressionData impressionData) {}
     /*</methods>*/
-    /*<adapter>*/
-    /*</adapter>*/
 }

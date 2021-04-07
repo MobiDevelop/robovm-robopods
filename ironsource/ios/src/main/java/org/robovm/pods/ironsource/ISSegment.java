@@ -83,6 +83,6 @@ import org.robovm.apple.coregraphics.*;
     /*<members>*//*</members>*/
     /*<methods>*/
     @Method(selector = "setCustomValue:forKey:")
-    public native void setCustomValueForKey(String value, String key);
+    public native void setCustomValue(String value, String key);
     /*</methods>*/
 }

@@ -62,5 +62,7 @@ import org.robovm.apple.coregraphics.*;
     public void bannerDidDismissScreen() {}
     @NotImplemented("bannerWillLeaveApplication")
     public void bannerWillLeaveApplication() {}
+    @NotImplemented("bannerDidShow")
+    public void bannerDidShow() {}
     /*</methods>*/
 }

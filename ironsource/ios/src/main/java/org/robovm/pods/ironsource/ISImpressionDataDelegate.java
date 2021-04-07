@@ -36,7 +36,7 @@ import org.robovm.apple.coregraphics.*;
 
 /*</javadoc>*/
 /*<annotations>*//*</annotations>*/
-/*<visibility>*/public/*</visibility>*/ interface /*<name>*/ISBannerDelegate/*</name>*/ 
+/*<visibility>*/public/*</visibility>*/ interface /*<name>*/ISImpressionDataDelegate/*</name>*/ 
     /*<implements>*/extends NSObjectProtocol/*</implements>*/ {
 
     /*<ptr>*/
@@ -48,20 +48,8 @@ import org.robovm.apple.coregraphics.*;
     
     /*</properties>*/
     /*<methods>*/
-    @Method(selector = "bannerDidLoad:")
-    void bannerDidLoad(ISBannerView bannerView);
-    @Method(selector = "bannerDidFailToLoadWithError:")
-    void bannerDidFailToLoad(NSError error);
-    @Method(selector = "didClickBanner")
-    void didClickBanner();
-    @Method(selector = "bannerWillPresentScreen")
-    void bannerWillPresentScreen();
-    @Method(selector = "bannerDidDismissScreen")
-    void bannerDidDismissScreen();
-    @Method(selector = "bannerWillLeaveApplication")
-    void bannerWillLeaveApplication();
-    @Method(selector = "bannerDidShow")
-    void bannerDidShow();
+    @Method(selector = "impressionDataDidSucceed:")
+    void impressionDataDidSucceed(ISImpressionData impressionData);
     /*</methods>*/
     /*<adapter>*/
     /*</adapter>*/
