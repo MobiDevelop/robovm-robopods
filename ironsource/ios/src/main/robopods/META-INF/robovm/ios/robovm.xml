@@ -24,7 +24,4 @@
         <framework>WebKit</framework>
         <framework>AudioToolbox</framework>
     </frameworks>
-    <weakFrameworks>
-        <framework>CoreAnimation</framework>
-    </weakFrameworks>
 </config>
